@@ -1,9 +1,9 @@
 {
-    "name": "jasongrimes/silex-simpleuser",
+    "name": "taehupo/silex-simpleuser",
     "type": "library",
-    "description": "A simple database-backed user provider for Silex, with associated services and controllers.",
+    "description": "Des utilisateur avec une BDD sur Silex, comprenant Controlleurs et providers.",
     "keywords": ["silex", "user", "user provider", "simple user provider"],
-    "homepage": "http://github.com/jasongrimes/silex-simpleuser",
+    "homepage": "http://github.com/Taehupo/silex-simpleuser",
     "license": "BSD-2-Clause",
     "authors": [
         {
