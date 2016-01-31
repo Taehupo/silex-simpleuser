@@ -469,7 +469,7 @@ class UserController
             'layout_template' => $this->getTemplate('layout'),
             'error' => implode("\n", $errors),
             'user' => $user,
-            'available_roles' => array('ROLE_USER', 'ROLE_ADMIN'),
+            'available_roles' => array('ROLE_PEON','ROLE_SUPER_PEON', 'ROLE_ADMIN'),
             'image_url' => $this->getGravatarUrl($user->getEmail()),
             'customFields' => $customFields,
             'isUsernameRequired' => $this->isUsernameRequired,

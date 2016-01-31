@@ -6,7 +6,7 @@ Simple User Provider for Silex
 [![Latest Stable Version](https://poser.pugx.org/jasongrimes/silex-simpleuser/v/stable.svg)](https://packagist.org/packages/jasongrimes/silex-simpleuser)
 [![Latest Unstable Version](https://poser.pugx.org/jasongrimes/silex-simpleuser/v/unstable.svg)](https://packagist.org/packages/jasongrimes/silex-simpleuser)
 
-A simple, extensible, database-backed user provider for the Silex [security service](http://silex.sensiolabs.org/doc/providers/security.html).
+A simple database-backed user provider for use with the Silex [SecurityServiceProvider](http://silex.sensiolabs.org/doc/providers/security.html).
 
 SimpleUser is an easy way to set up user accounts (authentication, authorization, and user administration) in the Silex PHP micro-framework. It provides drop-in services for Silex that implement the missing user management pieces for the Security component. It includes a basic User model, a database-backed user manager, controllers and views for user administration, and various supporting features.
 
@@ -32,7 +32,7 @@ This configuration should work out of the box to get you up and running quickly.
 
 Install with composer. This command will automatically install the latest stable version:
 
-    composer require taehupo/silex-simpleuser
+    composer require jasongrimes/silex-simpleuser
 
 Set up your Silex application something like this:
 
@@ -188,25 +188,6 @@ The default values are shown below.
         // Override table names, if necessary.
         'userTableName' => 'users',
         'userCustomFieldsTableName' => 'user_custom_fields',
-
-        //Override Column names, if necessary
-        'userColumns' = array(
-            'id' => 'id',
-            'email' => 'email',
-            'password' => 'password',
-            'salt' => 'salt',
-            'roles' => 'roles',
-            'name' => 'name',
-            'time_created' => 'time_created',
-            'username' => 'username',
-            'isEnabled' => 'isEnabled',
-            'confirmationToken' => 'confirmationToken',
-            'timePasswordResetRequested' => 'timePasswordResetRequested',
-            //Custom Fields
-            'user_id' => 'user_id',
-            'attribute' => 'attribute',
-            'value' => 'value',
-        ),
     );
 
 More information
